@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atv5.js"></script>
+    <title>document</title>
+</head>
+<body>
+
+<h1>Pesquisa do Filme</h1>
+
+<label>Idade:</label>
+<input type="number" id="idade">
+
+<label>Sexo:</label>
+<select id="sexo">
+  <option value="masculino">Masculino</option>
+  <option value="feminino">Feminino</option>
+  <option value="outros">Outros</option>
+</select><br><br>
+
+<label>Opinião:</label>
+<select id="opiniao">
+  <option value="4">Ótimo</option>
+  <option value="3">Bom</option>
+  <option value="2">Regular</option>
+  <option value="1">Péssimo</option>
+</select><br><br>
+
+<button onclick="adicionarPessoa()">Adicionar</button>
+<button onclick="calcular()">Calcular Resultados de Média</button>
+
+<h3>Resultado das Opiniões (Média):</h3>
+<p id="resultado"></p>
+
+</body>
+</html>
