@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="atv11Conta.js"></script>
+</head>
+<body>
+    <h1>Conta Corrente</h1>
+
+    <input type="text" id="nomeC" placeholder="Nome do correntista"><br><br>
+    <input type="text" id="bancoC" placeholder="Banco"><br><br>
+    <input type="number" id="numeroC" placeholder="Número da conta"><br><br>
+    <input type="number" id="saldoC" placeholder="Saldo"><br><br>
+    <input type="number" id="saldoEspecial" placeholder="Saldo especial"><br><br>
+
+    <button onclick="criarCorrente()">Criar Conta Corrente</button>
+
+    <hr>
+
+    <h1>Conta Poupança</h1>
+
+    <input type="text" id="nomeP" placeholder="Nome do correntista"><br><br>
+    <input type="text" id="bancoP" placeholder="Banco"><br><br>
+    <input type="number" id="numeroP" placeholder="Número da conta"><br><br>
+    <input type="number" id="saldoP" placeholder="Saldo"><br><br>
+    <input type="number" id="juros" placeholder="Juros"><br><br>
+    <input type="date" id="vencimento"><br><br>
+    
+    <button onclick="criarPoupanca()">Criar Conta Poupança</button>
+    
+    <hr>
+    
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+</body>
+</html>
