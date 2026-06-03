@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 13</title>
+</head>
+<body>
+
+    <h1 style="background-color: cadetblue; width: 350px;">Transformando Texto</h1>
+
+    <input type="text" id="texto">
+
+    <br><br>
+
+    <input type="radio" name="opcao" id="maiuscula">
+    <label for="maiuscula">Maiúsculas</label>
+
+    <input type="radio" name="opcao" id="minuscula">
+    <label for="minuscula">Minúsculas</label>
+
+    <script>
+        let texto = document.getElementById("texto");
+        let maiuscula = document.getElementById("maiuscula");
+        let minuscula = document.getElementById("minuscula");
+
+        maiuscula.addEventListener("click", function () {texto.value = texto.value.toUpperCase();});
+        minuscula.addEventListener("click", function () {texto.value = texto.value.toLowerCase();});
+        
+    </script>
+
+</body>
+</html>
